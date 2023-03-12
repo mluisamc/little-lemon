@@ -1,24 +1,23 @@
+import { Routes, Route } from 'react-router-dom';
+
 import './App.css';
 import Header from './Header.js';
 import Nav from './Nav.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
+import BookingPage from './BookingPage';
 
 function App() {
   return (
     <>
-      <head>
-        <meta name="description" content="Little Lemon restaurant with wide variety of dishes and affordable prices"/>
-        <meta name="og:title" content="Little Lemon restaurant"/>
-        <meta name="og:description" content="Little Lemon restaurant with wide variety of dishes and affordable prices"/>
-        <meta name="og:image" content=""/>
-      </head>
-      <body>
-        <Header/>
-        <Nav/>
-        <Main/>
-        <Footer/>
-      </body>
+      <Header/>
+      <Nav/>
+      <Main/>
+      <Footer/>
+
+      <Routes>
+        <Route path="/reservations" element={<BookingPage />} />
+       </Routes>
     </>
   )
 }
