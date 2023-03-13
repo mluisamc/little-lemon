@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 function BookingForm(props) {
   const [guests, setGuests] = useState(1);
   const [date, setDate] = useState("");
   const [occasion, setOccasion] = useState("");
 
   const [finalTime, setFinalTime] = useState(
-    props.availableTimes.map((times) => <option>{times}</option>)
+    // props.availableTimes.map((times) => <option>{times}</option>)
+    <option>13:00</option>
   );
 
   function handleDateChange(e) {
@@ -15,9 +17,9 @@ function BookingForm(props) {
     var stringify = e.target.value;
     const date = new Date(stringify);
 
-    props.updateTimes(date);
+    // props.updateTimes(date);
 
-    setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
+    // setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
   }
 
   return (

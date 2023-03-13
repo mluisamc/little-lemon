@@ -1,17 +1,29 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     return (
         <nav>
-        <ul>
+        <ul className='navbar'>
+         <li>
+         <img src='/Logo.svg' alt="Little Lemon logo" />
+         </li>
            <li>
-              <Link to="/">Home</Link>
+              <Link to="/">HOME</Link>
            </li>
            <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">ABOUT</Link>
            </li>
            <li>
-              <Link to="/reservations">Reservations</Link>
+             <Link to="/menu">MENU</Link>
+           </li>
+           <li>
+             <Link to="/reservations">RESERVATIONS</Link>
+           </li>
+           <li>
+             <Link to="/order">ORDER ONLINE</Link>
+           </li>
+           <li>
+             <Link to="/login">LOGIN</Link>
            </li>
         </ul>
   </nav>

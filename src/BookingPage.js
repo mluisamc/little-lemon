@@ -1,7 +1,9 @@
+import BookingForm from "./BookingForm";
+
 function BookingPage() {
 
   return (
-    null
+    <BookingForm />
   );
 }
 

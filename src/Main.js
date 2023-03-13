@@ -1,16 +1,13 @@
-import { Routes, Route } from "react-router-dom";
-import App from "./App.js";
-import Booking from "./BookingPage.js";
+import Homepage from "./Homepage.js";
+import BookingPage from "./BookingPage.js";
+import { Routes, Route } from 'react-router-dom';
 
 function Main() {
     return (
         <Routes>
-        <Route path="/" element={<App />} />
-
-
-        <Route path="/bookings" element={<Booking />} />
-
-        </Routes>
+             <Route path="/" element={<Homepage />} />
+            <Route path="/reservations" element={<BookingPage />} />
+       </Routes>
     )
 }
 

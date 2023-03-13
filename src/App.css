@@ -1,11 +1,11 @@
 * {
   font-family: "Markazi Text", "Karla", serif;
+  font-size: x-large;
 }
 
 label,
 input,
 select,
-textarea,
 p {
   font-family: "Karla";
 }
@@ -14,4 +14,88 @@ p {
   display: grid; 
   max-width: 200px; 
   gap: 20px;
+}
+
+.navbar{
+  display: grid; 
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.navbar> li,
+.navbar > a {
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+ul, menu {
+  list-style-type: none;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #495e57;
+}
+
+li > a:hover {
+  background-color: #495e57;
+  color: #f4ce14;
+  transition: 0.5s;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+footer {
+  min-height: 13rem;
+  background-color: #495e57;
+  color: #ffffff;
+  padding-bottom: 1rem;
+  margin-top: -1.4rem;
+}
+
+footer > menu {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-header {
+  margin-bottom: -1.25rem;
+}
+
+.footer-links {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links > a,
+.footer-links > Link,
+.footer-links > li {
+  text-align: left;
+  display: block;
+  color: white;
+  padding-top: 0.2rem;
+}
+
+.footer-links > a:hover {
+  text-decoration: underline;
+}
+
+.img-footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+}
+
+.img-footer > img {
+  max-height: 8rem;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-right: 3rem;
+
+  background-color: white;
+  padding: 0.5rem;
 }
