@@ -22,10 +22,10 @@ function Footer() {
         <li>
           <h1 className="footer-header">Contact</h1>
           <ul className="footer-links">
-            <li>2395 Maldove Way,</li>
+            <li>33 S Wabash Ave</li>
             <li>Chicago Illinois</li>
             <br></br>
-            <li>(629)-243-6827</li>
+            <li>632-245-784</li>
             <br></br>
             <a
               href="mailto: info@littlelemon.com"

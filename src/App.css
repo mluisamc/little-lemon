@@ -19,6 +19,7 @@ p {
 .navbar{
   display: grid; 
   grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin-bottom: 5vh;
 }
 
 .navbar> li,
@@ -36,6 +37,13 @@ a:visited,
 a:link {
   text-decoration: none;
   color: #495e57;
+}
+
+section > .action-button {
+  background-color: #f4ce14;
+  padding: 2vh 2rem 2vh 2rem;
+  border-radius: 0.5rem;
+  min-width: 12vw;
 }
 
 li > a:hover {
@@ -135,6 +143,7 @@ footer > menu {
 .testimonials-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0 0 0;
 }
 
 .about-us {
@@ -264,4 +273,35 @@ footer > menu {
 .booking-form {
   padding: 5rem 35rem;
   text-align: center;
+}
+
+.confirmation-header {
+  position: relative;
+  text-align: center;
+  color: #495e57;
+  margin-top: 20vh;
+  min-height: 50vh;
+}
+.redirect-buttons {
+  display: grid;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.redirect-button {
+  background-color: #464646;
+  color: white !important;
+  padding: 2vh 2rem 2vh 2rem;
+  border-radius: 0.5rem;
+  min-width: 12vw;
+  font-family: "Karla";
+  font-size: 18px;
+}
+
+.redirect-button:hover {
+  background-color: #f4ce14;
+  color: #495e57 !important;
+  transition: 0.2s;
 }

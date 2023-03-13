@@ -7,8 +7,7 @@ function BookingForm(props) {
   const [occasion, setOccasion] = useState("");
 
   const [finalTime, setFinalTime] = useState(
-    // props.availableTimes.map((times) => <option>{times}</option>)
-    <option>13:00</option>
+    props.availableTimes.map((times) => <option>{times}</option>)
   );
 
   function handleDateChange(e) {
@@ -17,9 +16,9 @@ function BookingForm(props) {
     var stringify = e.target.value;
     const date = new Date(stringify);
 
-    // props.updateTimes(date);
+    props.updateTimes(date);
 
-    // setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
+    setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
   }
 
   return (

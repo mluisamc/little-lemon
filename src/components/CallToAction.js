@@ -6,14 +6,14 @@ export default function CallToAction() {
                 <section className="hero-text">
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
-                    <p className="subsection">We are a family owned Mediterranean restaurant, located on  Maldove Street in Chicago, Illionis. We focus
-                    on traditional recipes served with a modern twist.</p>
-                    <br></br>
-                    <Link className="action-button" to="/reservations">Reserve a table</Link>
+                    <p className="subsection">Our vision is to offer a great variety of dishes with an affordable price, without sacrifice the quality.</p>
                 </section>
 
                 <section className="hero-image">
                     <img src="restaurant chef B.jpg" alt="Little Lemon restaurant cuisine"></img>
+                </section>
+                <section>
+                    <Link className="action-button" to="/reservations">Reserve a table</Link>
                 </section>
             </article>
       </header>

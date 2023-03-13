@@ -4,12 +4,9 @@ export default function Specials() {
     return (
         <section className="specials">
             <section className="specials-cards">
-                <SpecialCard image="greek salad.jpg" name="Greek Salad" price="$12.99" description="Refreshing salad, made with tomato, lettuce, feta cheese, and olives.
-                 Dressed with salt, hot pepper, and olive oil."/>
-                <SpecialCard image="bruchetta.svg" name="Bruschetta" price="$16.99" description="Toasted bread, topped with tomato, prosciutto, and cheese. Seasoned with
-                 salt and olive oil."/>
-                <SpecialCard image="lemon dessert.jpg" name="Lemon Dessert" price="$8.50" description="Fresh baked lemon bread coated in salt and sugar. Powdered in citrus
-                 and lemon zest."/>
+                <SpecialCard image="greek salad.jpg" name="Greek Salad" price="$10.99" description="Green salad with mixed greens, romaine, and kale. Sweet, juicy tomatoes, snappy bell peppers, and crisp cucumbers abound."/>
+                <SpecialCard image="bruchetta.svg" name="Bruschetta" price="$13.99" description="Toasted bread rubbed with garlic is topped with an herby, garlicky tomato mixture in this recipe for the freshest addition to any spread."/>
+                <SpecialCard image="lemon dessert.jpg" name="Lemon Dessert" price="$7.99" description=" Dessert pie consisting of a shortened pastry base filled with lemon curd and topped with meringue."/>
             </section>
         </section>
     );
