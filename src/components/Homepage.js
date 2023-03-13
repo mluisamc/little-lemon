@@ -1,10 +1,17 @@
 
 import '../App.css';
+import CallToAction from './CallToAction';
+import Chicago from './Chicago';
+import Specials from './Specials';
+import Testimonials from './Testimonials';
 
 function Homepage() {
   return (
     <>
-      <p>Homepage</p>
+      <CallToAction />
+      <Specials />
+      <Testimonials />
+      <Chicago />
     </>
   )
 }
